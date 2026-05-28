@@ -1,27 +1,24 @@
-const express = require('express');
-const app = express();
+export default function handler(req, res) {
+  const { url } = req;
 
-app.get('/privacy-policy', (req, res) => {
-  res.redirect(301, 'https://anonymoustoc.com/#privacypolicy');
-});
+  const map = {
+    "/privacy-policy": "privacy-policy",
+    "/terms-and-conditions": "terms-and-conditions",
+    "/end-user-license-agreement": "end-user-license-agreement",
+    "/csam": "csam",
+  };
 
-app.get('/terms-and-conditions', (req, res) => {
-  res.redirect(301, 'https://anonymoustoc.com/#termsofuse');
-});
+  if (map[url]) {
+    return res.status(200).send(`
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <meta http-equiv="refresh" content="0; url=https://anonymoustoc.com/#${map[url]}" />
+        </head>
+        <body></body>
+      </html>
+    `);
+  }
 
-app.get('/end-user-license-agreement', (req, res) => {
-  res.redirect(301, 'https://anonymoustoc.com/#eula');
-});
-
-app.get('/csam', (req, res) => {
-  res.redirect(301, 'https://anonymoustoc.com/#csam');
-});
-
-app.get('*', (req, res) => {
-  res.redirect(301, 'https://anonymoustoc.com');
-});
-
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
-});
+  return res.redirect("https://anonymoustoc.com");
+}
