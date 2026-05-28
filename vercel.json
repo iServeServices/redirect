@@ -1,0 +1,24 @@
+{
+  "redirects": [
+    {
+      "source": "/privacy-policy",
+      "destination": "/#privacy-policy",
+      "permanent": true
+    },
+    {
+      "source": "/terms-and-conditions",
+      "destination": "/#terms-and-conditions",
+      "permanent": true
+    },
+    {
+      "source": "/end-user-license-agreement",
+      "destination": "/#end-user-license-agreement",
+      "permanent": true
+    },
+    {
+      "source": "/csam",
+      "destination": "/#csam",
+      "permanent": true
+    }
+  ]
+}
