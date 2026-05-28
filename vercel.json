@@ -2,22 +2,22 @@
   "redirects": [
     {
       "source": "/privacy-policy",
-      "destination": "/#privacy-policy",
+      "destination": "https://anonymoustoc.com/#privacy-policy",
       "permanent": true
     },
     {
       "source": "/terms-and-conditions",
-      "destination": "/#terms-and-conditions",
+      "destination": "https://anonymoustoc.com/#terms-and-conditions",
       "permanent": true
     },
     {
       "source": "/end-user-license-agreement",
-      "destination": "/#end-user-license-agreement",
+      "destination": "https://anonymoustoc.com/#end-user-license-agreement",
       "permanent": true
     },
     {
       "source": "/csam",
-      "destination": "/#csam",
+      "destination": "https://anonymoustoc.com/#csam",
       "permanent": true
     }
   ]
