@@ -1,23 +1,28 @@
 {
   "redirects": [
     {
+      "source": "/",
+      "destination": "https://anonymoustoc.carrd.co",
+      "permanent": true
+    },
+    {
       "source": "/privacy-policy",
-      "destination": "https://anonymoustoc.com/#privacy-policy",
+      "destination": "https://anonymoustoc.carrd.co/#privacy-policy",
       "permanent": true
     },
     {
       "source": "/terms-and-conditions",
-      "destination": "https://anonymoustoc.com/#terms-and-conditions",
+      "destination": "https://anonymoustoc.carrd.co/#terms-and-conditions",
       "permanent": true
     },
     {
       "source": "/end-user-license-agreement",
-      "destination": "https://anonymoustoc.com/#end-user-license-agreement",
+      "destination": "https://anonymoustoc.carrd.co/#end-user-license-agreement",
       "permanent": true
     },
     {
       "source": "/csam",
-      "destination": "https://anonymoustoc.com/#csam",
+      "destination": "https://anonymoustoc.carrd.co/#csam",
       "permanent": true
     }
   ]
